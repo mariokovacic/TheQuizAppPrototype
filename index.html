@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <title id="TITLE">Moj prvi quiz</title>
+</head>
+
+<body>
+
+    <nav id="navigation" class="stil">
+
+
+        <div id="slide1" class="hide" onclick="slide1()">1</div>
+        <div id="slide2" class="hide" onclick="slide2()">2</div>
+        <div id="slide3" class="hide" onclick="slide3()">3</div>
+        <div id="slide4" class="hide" onclick="slide4()">4</div>
+
+
+
+    </nav>
+
+    <div class="quizStart" id="start">
+
+        <h1 id="mainTitle">MY FIRST QUIZ</h1>
+        <button id="enter1" onclick="enter()">ENTER</button>
+
+        <div id="buttons" class="hide">
+            <button id="previous" class="hide">PREVIOUS</button>
+            <div id="resultsNaslov" class="hide">RESULTS:<span id="results" class="hide"></span></div>
+            <button id="next" class="hide">NEXT</button>
+            <button id="showResults" class="hide">SHOW RESULTS</button>
+
+        </div>
+
+
+
+        <div id="quiz" class="hide">
+
+
+            <div id="slide1Pitanje" onclick="slide1()">
+
+
+                <h1 id="pitanje1" class="pitanja">Question 1</h1>
+
+                <div id="odgovor1" class="hide" onclick="correctAnswer()">1</div>
+                <div id="odgovor2" class="hide" onclick="wrongAnswer()">2</div>
+                <div id="odgovor3" class="hide" onclick="wrongAnswer()">3</div>
+                <div id="odgovor4" class="hide" onclick="wrongAnswer()">4</div>
+
+
+            </div>
+            <div id="slide2Pitanje" onclick="slide2()">
+
+                <h1 id="pitanje2" class="pitanja">Question 2</h1>
+
+                <div id="odgovor5" class="hide" onclick="correctAnswer()">1</div>
+                <div id="odgovor6" class="hide" onclick="wrongAnswer()">2</div>
+                <div id="odgovor7" class="hide" onclick="wrongAnswer()">3</div>
+                <div id="odgovor8" class="hide" onclick="wrongAnswer()">4</div>
+
+
+            </div>
+            <div id="slide3Pitanje" onclick="slide3()">
+
+                <h1 id="pitanje3" class="pitanja">Question 3</h1>
+
+                <div id="odgovor9" class="hide" onclick="correctAnswer()">1</div>
+                <div id="odgovor10" class="hide" onclick="wrongAnswer()">2</div>
+                <div id="odgovor11" class="hide" onclick="wrongAnswer()">3</div>
+                <div id="odgovor12" class="hide" onclick="wrongAnswer()">4</div>
+
+
+
+            </div>
+            <div id="slide4Pitanje" onclick="slide4()">
+
+                <h1 id="pitanje4" class="pitanja">Question 4</h1>
+
+
+                <div id="odgovor13" class="hide" onclick="correctAnswer()">1</div>
+                <div id="odgovor14" class="hide" onclick="wrongAnswer()">2</div>
+                <div id="odgovor15" class="hide" onclick="wrongAnswer()">3</div>
+                <div id="odgovor16" class="hide" onclick="wrongAnswer()">4</div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+@import "mixins";
+
+
+* {
+
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $boja2;
+
+
+}
+
+body {
+
+
+    margin-top: 20px;
+    margin-right: 170px;
+    border: 5px solid $boja1;
+    border-radius: 20px;
+    box-shadow: 20px 10px $boja1;
+
+}
+
+script {
+
+
+    display: none;
+
+
+}
+
+#TITLE {
+
+
+
+    display: none;
+
+}
+
+/* ---------------------------------- */
+
+
+.hide {
+
+
+    display: none;
+
+
+}
+
+
+
+
+/* ________________________- */
+
+/* BEGINNING SCREEN */
+
+
+.quizStart {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 600px;
+
+}
+
+.mainTitle {
+
+
+    margin: 100px;
+
+}
+
+#enter1 {
+
+
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    font-weight: bolder;
+
+
+}
+
+/* ------------------------------- */
+
+/* buttons */
+
+button {
+
+    @include button;
+
+
+}
+
+button:hover {
+
+
+    transition: 0.2s;
+    background-color: $boja3;
+
+
+
+}
+
+
+/* NAVIGATION BAR */
+
+.stil {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+
+
+.slide {
+
+    border: 2px solid $boja1;
+    border-radius: 10px;
+    margin: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.slide:hover {
+
+
+    background-color: $boja3;
+    transition: 1s;
+
+
+}
+
+/* NEXT, PREVIOUS and SHOW RESULTS buttons */
+
+#buttons {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+
+#next {
+
+
+
+    @include buttonDimension;
+
+    margin-left: 100px;
+
+}
+
+#showResults {
+
+
+    @include buttonDimension;
+
+    margin-left: 100px;
+
+}
+
+#previous {
+
+
+    @include buttonDimension;
+    margin-right: 100px;
+
+}
+
+
+
+/* SLIDES  ----------------------------------------*/
+
+
+.slide1 {
+
+    @include slide;
+
+}
+
+.slide2 {
+
+    @include slide;
+
+}
+
+.slide3 {
+
+
+    @include slide;
+
+}
+
+
+.slide4 {
+
+
+    @include slide;
+
+}
+
+
+
+
+.pitanja {
+
+
+
+    width: 150px;
+    height: 100px;
+
+
+}
+
+
+/* ODGOVORI -------------------- */
+
+/* SLIDE 1 */
+
+
+.answer1 {
+
+
+    @include answer;
+
+}
+
+.answer1:hover {
+
+    @include answerAnimacija;
+
+}
+
+
+
+
+.answer2 {
+
+
+    @include answer;
+
+
+}
+
+.answer2:hover {
+
+
+    @include answerAnimacija;
+
+
+}
+
+.answer3 {
+
+
+    @include answer;
+
+
+}
+
+.answer3:hover {
+
+    @include answerAnimacija;
+}
+
+.answer4 {
+
+    @include answer;
+}
+
+.answer4:hover {
+
+    @include answerAnimacija;
+
+}
+
+// SLIDE 2
+
+.answer5 {
+
+
+    @include answer;
+
+
+}
+
+.answer5:hover {
+
+
+    @include answerAnimacija;
+
+
+}
+
+.answer6 {
+
+
+    @include answer;
+
+
+}
+
+.answer6:hover {
+
+
+    @include answerAnimacija;
+}
+
+
+.answer7 {
+
+
+    @include answer;
+}
+
+.answer7:hover {
+
+
+    @include answerAnimacija;
+}
+
+
+.answer8 {
+
+
+    @include answer;
+}
+
+.answer8:hover {
+
+
+    @include answerAnimacija;
+}
+
+// SLIDE 3
+
+
+
+.answer9 {
+
+
+    @include answer;
+}
+
+.answer9:hover {
+
+
+    @include answerAnimacija;
+}
+
+
+
+
+.answer10 {
+
+
+    @include answer;
+}
+
+.answer10:hover {
+
+
+    @include answerAnimacija;
+}
+
+
+
+
+.answer11 {
+
+
+    @include answer;
+
+}
+
+.answer11:hover {
+
+
+    @include answerAnimacija;
+}
+
+
+
+
+.answer12 {
+
+
+    @include answer;
+
+}
+
+.answer12:hover {
+
+
+    @include answerAnimacija;
+
+}
+
+// SLIDE 4
+
+.answer13 {
+
+    @include answer;
+
+}
+
+.answer13:hover {
+
+
+    @include answerAnimacija;
+
+}
+
+.answer14 {
+
+
+    @include answer;
+
+
+}
+
+.answer14:hover {
+
+
+    @include answerAnimacija;
+
+}
+
+
+.answer15 {
+
+    @include answer;
+}
+
+.answer15:hover {
+
+    @include answerAnimacija;
+}
+
+
+.answer16 {
+
+
+    @include answer;
+
+}
+
+.answer16:hover {
+
+
+    @include answerAnimacija;
+
+}
+
+
+#resultsNaslov {
+
+    border: 2px solid $boja1;
+    border-radius: 5px;
+    box-shadow: 5px 5px $boja1;
+
+
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+
+}

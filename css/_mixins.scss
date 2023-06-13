@@ -1,0 +1,65 @@
+$boja1: #2f404d;
+$boja2: #3d898d;
+$boja3: #85ebd9;
+$boja4: #e2dddf;
+
+@mixin slide {
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+@mixin button {
+
+
+    border: 2px solid $boja1;
+    border-radius: 5px;
+    box-shadow: 5px 5px $boja1;
+
+
+}
+
+@mixin buttonDimension {
+
+
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+
+
+}
+
+@mixin answer {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $boja1;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+
+
+
+
+}
+
+@mixin answerAnimacija {
+
+    transition: 0.2s;
+    background-color: $boja3;
+
+
+}
